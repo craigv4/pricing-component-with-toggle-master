@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./css/main.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="/dist/output.css" />
+		<script
+			src="./app.js"
+			defer></script>
+		<title>Price Component</title>
+	</head>
+	<body class="h-screen w-screen">
+		<main class="text-center mx-auto flex flex-col items-center container">
+			<section class="my-12 lg:mx-64 lg:my-8">
+				<h1 class="text-gray-800 my-6 text-3xl lg:text-5xl lg:my-10">Our Pricing</h1>
+				<div class="flex flex-row justify-around items-center">
+					<h2
+						class="text-gray-600 text-sm lg:text-lg"
+						id="year">
+						Annually
+					</h2>
+					<label class="toggle h-6 mx-4">
+						<input
+							class="toggle-checkbox"
+							type="checkbox" />
+						<div
+							class="toggle-switch"
+							unchecked></div>
+					</label>
+					<h2
+						class="text-gray-600 text-sm lg:text-lg"
+						id="month">
+						Monthly
+					</h2>
+				</div>
+			</section>
+			<div class="flex flex-col lg:flex-row justify-center items-center">
+				<section class="bg-gray-200 rounded-lg mb-8 flex flex-col justify-evenly p-8 lg:rounded-r-none">
+					<p class="text-gray-600 mb-6 lg:mb-8">Basic</p>
+					<p class="hidden monthly text-gray-800 text-5xl lg:mb-6">&dollar;19.99</p>
+					<p class="yearly text-gray-800 text-5xl lg:mb-6">&dollar;199.99</p>
+					<div class="flex flex-col justify-center items-center py-4">
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-gray-400">600 GB Storage</p>
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-gray-400">2 Users Allowed</p>
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-b border-gray-400">Send up to 3 GB</p>
+					</div>
+					<button class="crg-gradient text-gray-200 mt-4 py-2 rounded-lg lg:mx-0">LEARN MORE</button>
+				</section>
+				<section class="crg-gradient rounded-lg mb-8 flex flex-col justify-evenly p-8 lg:py-16 lg:px-12">
+					<p class="text-gray-200 mb-6 lg:mb-8">Professional</p>
+					<p class="hidden monthly text-gray-200 text-5xl lg:mb-6">&dollar;24.99</p>
+					<p class="yearly text-gray-200 text-5xl lg:mb-6">&dollar;249.99</p>
+					<div class="flex flex-col justify-center items-center py-4">
+						<p class="text-gray-200 text-xs py-3 w-52 border-t border-gray-400">1 TB Storage</p>
+						<p class="text-gray-200 text-xs py-3 w-52 border-t border-gray-400">5 Users Allowed</p>
+						<p class="text-gray-200 text-xs py-3 w-52 border-t border-b border-gray-400">Send up to 10 GB</p>
+					</div>
+					<button class="crg-gradient2 text-gray-800 mt-4 py-2 rounded-lg lg:mx-0">LEARN MORE</button>
+				</section>
+				<section class="bg-gray-200 rounded-lg mb-8 flex flex-col justify-evenly p-8 lg:rounded-l-none">
+					<p class="text-gray-600 mb-6 lg:mb-8">Master</p>
+					<p class="hidden monthly text-gray-800 text-5xl lg:mb-6">&dollar;39.99</p>
+					<p class="yearly text-gray-800 text-5xl lg:mb-6">&dollar;399.99</p>
+					<div class="flex flex-col justify-center items-center py-4">
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-gray-400">2 TB Storage</p>
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-gray-400">10 Users Allowed<</p>
+						<p class="text-gray-600 text-xs py-3 w-52 border-t border-b border-gray-400">Send up to 20 GB</p>
+					</div>
+					<button class="crg-gradient text-gray-200 mt-4 py-2 rounded-lg lg:mx-0">LEARN MORE</button>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

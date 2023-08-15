@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.crg-gradient {
+	background: radial-gradient(at left top, #a3a8f0, #4246a3);
+}
+
+.crg-gradient2 {
+	background: radial-gradient(at left top, #ebebfa, #c6c8f9);
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.toggle {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.toggle-switch {
+	display: inline-block;
+	background: #8b8ed8;
+	border-radius: 16px;
+	width: 46px;
+	height: 26px;
+	position: relative;
+	vertical-align: middle;
+	transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+	content: "";
+}
+
+.toggle-switch:before {
+	display: block;
+	background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+	background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+	background: #8b8ed8;
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+	left: 24px;
+}
+
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+
+.toggle-label {
+	margin-left: 5px;
+	position: relative;
+	top: 2px;
+}
+.yearly {
+	display: block;
+}
+
+.monthly {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #e8e9ff;
+	background-image: url(/img/bg-top.svg), url(/img/bg-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: right top, bottom left;
+}
